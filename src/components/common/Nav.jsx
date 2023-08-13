@@ -7,25 +7,25 @@ function Nav() {
     <header>
       <article>
         <h1>
-          <Link to="/">
-            <h3>
+          <h3>
+            <Link to="/">
               Northwest <span>Animal Hospital</span>
-            </h3>
-          </Link>
+            </Link>
+          </h3>
         </h1>
       </article>
       <aside>
         <ul>
-          <Link to="/staff">
-            <li>
+          <li>
+            <Link to="/staff">
               <h2>All Staff</h2>
-            </li>
-          </Link>
-          <Link to="/pets">
-            <li>
+            </Link>
+          </li>
+          <li>
+            <Link to="/pets">
               <h2>All Pets</h2>
-            </li>
-          </Link>
+            </Link>
+          </li>
         </ul>
       </aside>
     </header>

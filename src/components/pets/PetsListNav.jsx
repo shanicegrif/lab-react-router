@@ -6,16 +6,17 @@ export const PetsListNav = ({ cats, dogs }) => {
   return (
     <nav className="pets-nav">
       <ul>
-        <Link to="/pets/cats">
-          <li>
+        <li>
+          <Link to="/pets/cats">
             <p>See All Cats ({cats.length})</p>
-          </li>
-        </Link>
-        <Link to="/pets/dogs">
-          <li>
+          </Link>
+        </li>
+
+        <li>
+          <Link to="/pets/dogs">
             <p>See All Dogs ({dogs.length})</p>
-          </li>
-        </Link>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

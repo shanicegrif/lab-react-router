@@ -36,8 +36,7 @@ function App() {
           />
           <Route path="/staff" element={<StaffList employees={employees} />} />
           <Route path="/pets" element={<PetsList pets={pets} />} />
-          <Route path="/pets/cats" element={<PetsList pets={pets}/>} />
-          <Route path="/pets/dogs" element={<PetsList pets={pets}/>} />
+          <Route path="/pets/:kind" element={<PetsList pets={pets}/>} />
         </Routes>
         <Footer />
       </Router>
