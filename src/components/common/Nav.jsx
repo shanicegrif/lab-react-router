@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
@@ -6,19 +7,25 @@ function Nav() {
     <header>
       <article>
         <h1>
-          <a href="/">
-            Northwest <span>Animal Hospital</span>
-          </a>
+          <Link to="/">
+            <h3>
+              Northwest <span>Animal Hospital</span>
+            </h3>
+          </Link>
         </h1>
       </article>
       <aside>
         <ul>
-          <li>
-            <a href="/staff">All Staff</a>
-          </li>
-          <li>
-            <a href="/pets">All Pets</a>
-          </li>
+          <Link to="/staff">
+            <li>
+              <h2>All Staff</h2>
+            </li>
+          </Link>
+          <Link to="/pets">
+            <li>
+              <h2>All Pets</h2>
+            </li>
+          </Link>
         </ul>
       </aside>
     </header>

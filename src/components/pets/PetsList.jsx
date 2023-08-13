@@ -13,6 +13,7 @@ export const PetsList = ({ pets }) => {
     [[], []]
   );
 
+
   return (
     <section className="pets-wrapper">
       <PetsListNav cats={cats} dogs={dogs} />

@@ -1,16 +1,21 @@
 import React from "react";
 import "./PetsListNav.css";
+import { Link } from "react-router-dom";
 
 export const PetsListNav = ({ cats, dogs }) => {
   return (
     <nav className="pets-nav">
       <ul>
-        <li>
-          <a href="/pets/cats">See All Cats ({cats.length})</a>
-        </li>
-        <li>
-          <a href="/pets/dogs">See All Dogs ({dogs.length})</a>
-        </li>
+        <Link to="/pets/cats">
+          <li>
+            <p>See All Cats ({cats.length})</p>
+          </li>
+        </Link>
+        <Link to="/pets/dogs">
+          <li>
+            <p>See All Dogs ({dogs.length})</p>
+          </li>
+        </Link>
       </ul>
     </nav>
   );
